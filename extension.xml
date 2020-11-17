@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.3" release="3.1">
+	<announcement text="5E - Character Sheet Reaction" font="emotefont" />
+
+ 	<properties>
+		<name>5E - Character Sheet Reaction</name>
+		<version>1.0</version>
+		<author>dkniffin (Derek Kniffin)</author>
+		<description>Character Sheet Reaction</description>
+		<description>This extension adds a tickbox to the 5E character sheet for tracking reaction. It is tied to the reaction field in the combat tracker under "offensive".</description>
+		<ruleset>
+			<name>5E</name>
+		</ruleset>
+	</properties>
+
+	<base>
+	  <includefile source="strings.xml" />
+	  <includefile source="charsheet.xml" />
+	  <includefile source="ct_host.xml" />
+	</base>
+</root>

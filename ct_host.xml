@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+  <windowclass name="ct_entry" merge="join">
+    <script file="ct_entry.lua" />
+
+    <sheetdata>
+      <!-- Delete the existing reaction control and label -->
+      <buttonfield name="reaction" merge="delete" />
+      <label name="reaction_label" merge="delete" />
+
+      <!-- Add our own, so that we can use checkbox_ct_crosslink -->
+      <checkbox_ct_crosslink name="reaction" merge="replace">
+        <anchored to="activeicon" position="righthigh" offset="60,5" width="12" height="20" />
+      </checkbox_ct_crosslink>
+
+      <label name="reaction_label" merge="replace">
+				<anchored to="reaction" position="lefthigh" offset="5,0"/>
+				<static textres="ct_label_reaction" />
+			</label>
+    </sheetdata>
+  </windowclass>
+</root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+  <string name="char_label_reaction">REAC</string>
+  <string name="char_tooltip_reaction">Reaction</string>
+
+  <string name="ct_label_reaction">React?</string>
+</root>

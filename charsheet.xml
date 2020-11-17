@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+	<windowclass name="charsheet" merge="join">
+		<sheetdata>
+
+      <!-- Change width of name field -->
+			<label_charframetop name="nametitle" merge="replace">
+				<anchored to="contentanchor" height="20">
+					<top anchor="bottom" offset="7" />
+					<left offset="65" />
+					<right offset="-190" />
+				</anchored>
+				<static textres="char_label_name" />
+			</label_charframetop>
+
+      <!-- Add Reaction button -->
+
+      <label_charframetop name="reactiontitle">
+				<anchored to="inspirationtitle" position="righthigh" offset="20,0" width="30" height="20" />
+				<static textres="char_label_reaction" />
+				<tooltip textres="char_tooltip_reaction" />
+			</label_charframetop>
+
+			<buttongroup_counter name="reaction">
+				<anchored to="reactiontitle">
+					<top anchor="bottom" offset="5" />
+					<left anchor="center" offset="-5" />
+				</anchored>
+				<tooltip textres="char_tooltip_reaction" />
+				<sourcefields><current>reaction</current></sourcefields>
+				<values><maximum>1</maximum></values>
+			</buttongroup_counter>
+    </sheetdata>
+  </windowclass>
+</root>
